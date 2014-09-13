@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//	Code Original Creator: Rastertek
+//	Source: http://www.rastertek.com/tertut02.html
+//	Used By: Leonard Roll
+//	I do not own most of the code but am following the tutorials on the website 
+//	to create my project for the final year projects.
+//
+////////////////////////////////////////////////////////////////////////////////
+// Filename: textureclass.h
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _TEXTURECLASS_H_
+#define _TEXTURECLASS_H_
+
+
+//////////////
+// INCLUDES //
+//////////////
+#include <d3d11.h>
+#include <d3dx11tex.h>
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: TextureClass
+////////////////////////////////////////////////////////////////////////////////
+class TextureClass
+{
+public:
+	TextureClass();
+	TextureClass(const TextureClass&);
+	~TextureClass();
+
+	bool Initialize(ID3D11Device*, WCHAR*);
+	void Shutdown();
+
+	ID3D11ShaderResourceView* GetTexture();
+
+private:
+	ID3D11ShaderResourceView* m_texture;
+};
+
+#endif

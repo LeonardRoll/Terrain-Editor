@@ -1,0 +1,20 @@
+﻿Build started 11/05/2014 10:31:21.
+     1>Project "C:\Users\Raymund\Downloads\Desktop 3\Final Project Leonard Roll\Terrain Editor\Engine\Engine\Engine.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Engine.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\Engine.unsuccessfulbuild".
+         Touching "Debug\Engine.lastbuildstate".
+     1>Done Building Project "C:\Users\Raymund\Downloads\Desktop 3\Final Project Leonard Roll\Terrain Editor\Engine\Engine\Engine.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08

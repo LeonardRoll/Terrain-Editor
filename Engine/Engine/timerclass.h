@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+//	Code Original Creator: Rastertek
+//	Source: http://www.rastertek.com/tertut02.html
+//	Used By: Leonard Roll
+//	I do not own most of the code but am following the tutorials on the website 
+//	to create my project for the final year projects.
+//
+////////////////////////////////////////////////////////////////////////////////
+// Filename: timerclass.h
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _TIMERCLASS_H_
+#define _TIMERCLASS_H_
+
+
+//////////////
+// INCLUDES //
+//////////////
+#include <windows.h>
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: TimerClass
+////////////////////////////////////////////////////////////////////////////////
+class TimerClass
+{
+public:
+	TimerClass();
+	TimerClass(const TimerClass&);
+	~TimerClass();
+
+	bool Initialize();
+	void Frame();
+
+	float GetTime();
+
+private:
+	INT64 m_frequency;
+	float m_ticksPerMs;
+	INT64 m_startTime;
+	float m_frameTime;
+};
+
+#endif
